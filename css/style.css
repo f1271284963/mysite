@@ -1,35 +1,74 @@
-/*
-  universal
-*/
-*{
-  font-family: 'Titillium Web', sans-serif;
-  box-sizing: border-box;
+/*universal*/
+body{
+  font: 15px/1.5 sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #defcff;
 }
-html, body{
-  background-color: #330b5b;
-	margin: 0;
-	padding: 0;
-	height: 100%;
+
+/*Global*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
-a{
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*Header*/
+header{
+  background: #b5dbe0;
+  color: #1c2020;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #95aaad 3px solid;
+}
+
+header a{
+  color: #1c2020;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
 }
-/*
-  navagation
-*/
-.nav{
-  display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	list-style-type: none;
-	width: 100%;
-	background-color: #280137;
-	height: 50px;
-	top: 0;
-	position: fixed;
-  font-size: 2rem;
-  font-style: bold;
-  border-bottom: 2px black;
+
+header li{
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+header #brand{
+  float: left;
+}
+
+header #brand h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight{
+  color: #ff2929;
+  font-weight: bold;
+}
+
+header h1{
+  font-style: italic;
+}
+
+header a:hover{
+  font-weight: bold;
+}
+
+/*logo*/
+#logo{
+  min-height: 400px;
+  background: url('../img/hondaRed.jpg') no-repeat 0 -50px;
+  align-items: center;
 }
