@@ -13,6 +13,16 @@ body{
   font-weight: bold;
 }
 
+.intropic{
+  background-image: url("../img/odo.jpg");
+  background-color: #cccccc;
+  border-radius: 3px;
+  height: 40px;
+  margin: auto;
+  background-position: 51% 44%;
+  text-align: center;
+}
+
 .container{
   width: 80%;
   margin: auto;
@@ -69,29 +79,52 @@ header a:hover{
 }
 /*Header FIN*/
 
-/*content*/
-#intropic{
-  background-image: url("../img/odo.jpg");
-  background-color: #cccccc;
-  border-radius: 3px;
-  height: 40px;
-  margin: auto;
-  background-position: 51% 44%;
-  text-align: center;
-}
-
-#intro{
+/*INDEX content*/
+#intro1{
   text-align: center;
   color: #260844;
+  font-size: 19px;
 }
 
-#info{
+#info1{
   color: #260844;
   width: 60%;
   margin: auto;
   border: #95aaad 3px solid;
 }
-/*content FIN*/
+/*INDEX content FIN*/
+
+/*myCar content*/
+#intro2{
+  text-align: center;
+  color: #260844;
+  font-size: 19px;
+}
+
+#car1{
+  color: #260844;
+  width: 60%;
+  margin: auto;
+  margin-top: 0;
+  border: #95aaad 3px solid;
+  text-align: center;
+  height: 600px;
+  overflow: scroll;
+}
+
+#FG2{
+  height: 500px;
+  width: 700px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#info2{
+  color: #260844;
+  width: 60%;
+  margin: auto;
+}
+/*myCar content FIN*/
 
 /*footer*/
 footer{
@@ -103,5 +136,6 @@ footer{
   overflow: hidden;
   text-align: center;
   font-size: 13px;
+  margin-top: auto;
 }
 /*footer FIN*/
