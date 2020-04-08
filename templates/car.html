@@ -1,0 +1,75 @@
+{% extends "baseTemplate.html" %}
+
+{% block head %}
+<title>HighRevvRacer HRR - Car</title>
+{% endblock %}
+
+{% block body %}
+  <audio id="FG2Audio">
+    <source src="/static/media/startup.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="M3Audio">
+    <source src="/static/media/startup.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="FD2Audio">
+    <source src="/static/media/startup.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  <!-- Content -->
+  <section id="intro2">
+    <div class="container">
+      <h1>Cars</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <div id="car">
+      <section>
+        <h1><i>My Car - FG2</i></h1>
+        <img id="FG2" class="carImg" src="/static/media/off.jpg"></img>
+        <div class="info2">
+          <ul>
+            <li>Name: FG2 (Honda Civic SI Coupe Year 2006-2011)</li>
+            <li>Engine: Honda K20 Family - NA2.0l4 - K20Z3</li>
+            <li>Horse Power: 197hp @ 7800RPM</li>
+            <li>Torque: 139ft-lbs. @ 6200RPM</li>
+          </ul>
+          <button class="carSound" onclick="FG2On();">On</button>
+          <button class="carSound" onclick="FG2Off();">Off</button>
+      </div>
+      </section>
+
+      <section>
+        <h1><i>E92 M3</i></h1>
+        <img class="carImg" src="/static/media/M3E92.jpg"></img>
+        <div class="info2">
+          <ul>
+            <li>Name: E92 M3 (BMW 3-Series M Coupe Year 2007-2013)</li>
+            <li>Engine: BMW S family - NA4.0V8 - S65B40</li>
+            <li>Horse Power: 414hp @ 8300RPM</li>
+            <li>Torque: 295ft-lbs. @ 3900RPM</li>
+          </ul>
+          <button class="carSound" onclick="M3On();">On</button>
+          <button class="carSound" onclick="M3Off();">Off</button>
+      </div>
+      </section>
+
+      <section>
+        <h1><i>FD2</i></h1>
+        <img class="carImg" src="/static/media/FD2.jpg"></img>
+        <div class="info2">
+          <ul>
+            <li>Name: FD2 (Honda Civic Type R Year 2006-2011)</li>
+            <li>Engine: Honda K20 Family - NA2.0l4 - K20A</li>
+            <li>Horse Power: 221hp @ 8000RPM</li>
+            <li>Torque: 159ft-lbs. @ 6100RPM</li>
+          </ul>
+          <button class="carSound" onclick="FD2On();">On</button>
+          <button class="carSound" onclick="FD2Off();">Off</button>
+      </div>
+      </section>
+    </div>
+  </section>
+{% endblock %}

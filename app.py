@@ -14,9 +14,9 @@ def index():
 	return render_template('index.html')
 
 # render my car page
-@app.route('/mycar')
-def my_car():
-	return render_template('myCar.html')
+@app.route('/car')
+def car():
+	return render_template('car.html')
 
 # render touge page
 @app.route('/touge')
