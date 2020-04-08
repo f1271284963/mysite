@@ -7,27 +7,30 @@
   {% block head %} {% endblock %}
 </head>
 <body>
-  <header>
-    <div class="container">
-      <!--branding-->
-      <div id="brand">
-        <h1><span class="highlightR">HR</span>R</h1>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <!--branding-->
+        <div id="brand">
+          <h1><span class="highlightR">HR</span>R</h1>
+        </div>
+        <!--navagation-->
+        <nav>
+          <ul>
+            <li> <a href="{{url_for('index')}}" class="highlightR"> Welcome </a> </li>
+            <li> <a href="{{url_for('car')}}" class="highlightR"> Car </a> </li>
+            <li> <a href="{{url_for('touge')}}" class="highlightR"> Touge </a> </li>
+            <li> <a href="{{url_for('track')}}" class="highlightR"> Track </a> </li>
+          </ul>
+        </nav>
       </div>
-      <!--navagation-->
-      <nav>
-        <ul>
-          <li> <a href="{{url_for('index')}}" class="highlightR"> Welcome </a> </li>
-          <li> <a href="{{url_for('car')}}" class="highlightR"> Car </a> </li>
-          <li> <a href="{{url_for('touge')}}" class="highlightR"> Touge </a> </li>
-          <li> <a href="{{url_for('track')}}" class="highlightR"> Track </a> </li>
-          <li> <a href="{{url_for('blog')}}" class="highlightR"> Blog </a> </li>
-        </ul>
-      </nav>
+    </header>
+    <section class="intropic">
+    </section>
+    <div class="main">
+      {% block body %} {% endblock %}
     </div>
-  </header>
-  <section class="intropic">
-  </section>
-  {% block body %} {% endblock %}
+  </div>
 
   <!-- Footer -->
   <footer>

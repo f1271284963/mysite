@@ -5,6 +5,22 @@ body{
   margin: 0;
   background-color: #7319cc;
 }
+
+body html{
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+}
+
+.main{
+  overflow: auto;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 55%;
+  margin: auto;
+}
 /*universal FIN*/
 
 /*Global*/
@@ -108,21 +124,10 @@ header a:hover{
   font-size: 19px;
 }
 
-#car{
-  color: #260844;
-  width: 65%;
-  margin: auto;
-  margin-top: 0;
-  border: #95aaad 3px solid;
-  border-radius: 5px;
-  text-align: center;
-  height: 620px;
-  overflow: scroll;
-}
-
 .carImg{
   height: 500px;
   width: 700px;
+  border: 2px solid black;
   border-radius: 5px;
   margin: auto;
 }
@@ -151,14 +156,10 @@ header a:hover{
 
 /*footer*/
 footer{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  overflow: hidden;
   text-align: center;
-  font-size: 13px;
-  margin-top: auto;
+  position: relative;
+  height: 30px;
+  margin-top: -30px;
 }
+
 /*footer FIN*/

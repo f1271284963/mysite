@@ -28,11 +28,6 @@ def touge():
 def track():
 	return render_template('track.html')
 
-# render blog page
-@app.route('/blog')
-def blog():
-	return render_template('blog.html')
-
 # Debug on
 if (__name__ == "__main__"):
 	# Creates a secret key.
