@@ -114,8 +114,9 @@ header a:hover{
   margin: auto;
   margin-top: 0;
   border: #95aaad 3px solid;
+  border-radius: 5px;
   text-align: center;
-  height: 600px;
+  height: 620px;
   overflow: scroll;
 }
 
