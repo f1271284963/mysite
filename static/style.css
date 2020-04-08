@@ -14,7 +14,7 @@ body{
 }
 
 .intropic{
-  background-image: url("../img/odo.jpg");
+  background-image: url("/static/media/odo.jpg");
   background-color: #cccccc;
   border-radius: 3px;
   height: 40px;
@@ -33,6 +33,10 @@ ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+li{
+  line-height: 1.5;
 }
 /*Global FIN*/
 
@@ -90,7 +94,10 @@ header a:hover{
   color: #260844;
   width: 60%;
   margin: auto;
+  margin-top: 20px;
   border: #95aaad 3px solid;
+  font-size: 20px;
+  padding: 3px 13px 3px 13px;
 }
 /*INDEX content FIN*/
 
@@ -103,7 +110,7 @@ header a:hover{
 
 #car1{
   color: #260844;
-  width: 60%;
+  width: 65%;
   margin: auto;
   margin-top: 0;
   border: #95aaad 3px solid;
@@ -120,11 +127,25 @@ header a:hover{
 }
 
 #info2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: #260844;
   width: 60%;
   margin: auto;
+  text-align: left;
+}
+
+#FG2Sound{
+  margin-left: auto;
+  background-color: inherit;
+  color: inherit;
 }
 /*myCar content FIN*/
+
+/*touge content*/
+
+/*touge FIN*/
 
 /*footer*/
 footer{

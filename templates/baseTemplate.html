@@ -4,7 +4,8 @@
   <title>HighRevvRacer HRR</title>
   <meta charset="utf-8">
   <meta name="viewport" content="wdith=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  {% block head %} {% endblock %}
 </head>
 <body>
   <header>
@@ -16,23 +17,24 @@
       <!--navagation-->
       <nav>
         <ul>
-          <li> <a href="index.html" class="highlightR"> Welcome </a> </li>
-          <li> <a href="myCar.html" class="highlightR"> My Car </a> </li>
-          <li> <a href="touge.html" class="highlightR"> Touge </a> </li>
-          <li> <a href="track.html" class="highlightR"> Track </a> </li>
+          <li> <a href="{{url_for('index')}}" class="highlightR"> Welcome </a> </li>
+          <li> <a href="{{url_for('my_car')}}" class="highlightR"> My Car </a> </li>
+          <li> <a href="{{url_for('touge')}}" class="highlightR"> Touge </a> </li>
+          <li> <a href="{{url_for('track')}}" class="highlightR"> Track </a> </li>
+          <li> <a href="{{url_for('blog')}}" class="highlightR"> Blog </a> </li>
         </ul>
       </nav>
     </div>
   </header>
-  <!-- Content -->
   <section class="intropic">
   </section>
+  {% block body %} {% endblock %}
 
   <!-- Footer -->
   <footer>
     <p> This site is designed by Frank Kong. </p>
   </footer>
   <!-- Script -->
-  <script src="myScript.js"></script>
+  <script src="/static/myScript.js"></script>
 </body>
 </html>
